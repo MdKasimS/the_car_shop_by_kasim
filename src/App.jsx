@@ -1,13 +1,16 @@
-import './App.css'
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Header from "./components/Header";
 
-function App() {
-
-
+const App = () => {
   return (
-    <div>
+      <Router>
+        <Header></Header>
+        <Routes>
+          {/* Define your pages here */}
+        </Routes>
+      </Router>
+  );
+};
 
-    </div>
-  )
-}
-
-export default App
+export default App;
